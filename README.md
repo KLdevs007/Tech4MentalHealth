@@ -208,12 +208,6 @@ This model is intended for research and prototyping purposes only.
 It must not replace professional medical diagnosis or certified mental health services.
 
 
-
-
-
-````md
----
-
 # Mental Health Text Classification – Linear SVC Model
 
 ## Overview
@@ -271,9 +265,7 @@ Example preprocessing:
 ```python
 df["text"] = df["text"].str.lower()
 df = df.drop_duplicates(subset=["text", "label"])
-````
-
----
+```
 
 ## Feature Extraction (TF-IDF)
 
